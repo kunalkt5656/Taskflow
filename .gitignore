@@ -1,0 +1,160 @@
+# ================================
+# DEPENDENCIES
+# ================================
+node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ================================
+# BUILD & PRODUCTION
+# ================================
+dist/
+dist-ssr/
+build/
+*.local
+.next/
+out/
+
+# ================================
+# ENVIRONMENT VARIABLES
+# ================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+*.env
+
+# ================================
+# LOGS
+# ================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ================================
+# EDITOR & IDE
+# ================================
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# ================================
+# OS GENERATED FILES
+# ================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*.lnk
+
+# ================================
+# TEMP & SWAP FILES
+# ================================
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+
+# ================================
+# TESTING & COVERAGE
+# ================================
+coverage/
+.nyc_output/
+*.lcov
+.jest/
+jest-results/
+
+# ================================
+# UPLOADS & USER FILES
+# ================================
+backend/uploads/*
+!backend/uploads/.gitkeep
+uploads/*
+!uploads/.gitkeep
+
+# ================================
+# CACHE
+# ================================
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.cache
+
+# ================================
+# SECURITY & KEYS
+# ================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+.secrets
+
+# ================================
+# DEPLOYMENT
+# ================================
+.vercel
+.netlify
+.firebase/
+firebase-debug.log
+.firebaserc
+
+# ================================
+# MISC
+# ================================
+*.bak
+*.backup
+*.old
+.git/
+.gitattributes
+*.gz
+*.zip
+*.tar
+*.rar
+
+# ================================
+# DATABASE
+# ================================
+*.sqlite
+*.sqlite3
+*.db
+mongo-data/
+
+# ================================
+# DEBUG
+# ================================
+.debug/
+debug.log
+
+# ================================
+# DOCUMENTATION (Optional)
+# ================================
+# docs/_build/
+# *.pdf
