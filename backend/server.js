@@ -17,6 +17,7 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
+  'https://taskflow-kunals-projects-a69bf786.vercel.app',
   process.env.CLIENT_URL
 ].filter(Boolean);
 
