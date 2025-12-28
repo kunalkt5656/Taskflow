@@ -48,11 +48,22 @@ export default App;
 const Root = () => {
   const { user, loading } = useContext(UserContext);
 
-  if (loading)
-    return <Outlet />
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 to-purple-50">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-12 h-12 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin" />
+          <p className="text-gray-500 font-medium">Loading...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!user) {
-    return <Navigate to="/login" />
+    return <Navigate to="/login" replace />;
   }
-  return user.role === "admin" ? <Outlet /> : <Navigate to="/user/userdashboard" />;
+
+  return user.role === "admin"
+    ? <Navigate to="/admin/dashboard" replace />
+    : <Navigate to="/user/userdashboard" replace />;
 };
