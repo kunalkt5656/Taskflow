@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8000';
+// Use Render URL in production, localhost in development
+const BASE_URL = import.meta.env.PROD
+    ? 'https://taskflow-1-4ldi.onrender.com'
+    : 'http://localhost:8000';
 
 const axiosInstance = axios.create({
     baseURL: BASE_URL,
