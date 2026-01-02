@@ -230,7 +230,7 @@ CLIENT_URL=http://localhost:5173
 
 ## 🚀 Deployment
 
-### Frontend (Vercel/Netlify)
+### Frontend (Vercel)
 
 ```bash
 # Build for production
@@ -239,7 +239,7 @@ npm run build
 # Deploy the 'dist' folder
 ```
 
-### Backend (Railway/Render/Heroku)
+### Backend (Render)
 
 ```bash
 # Set environment variables on your platform
